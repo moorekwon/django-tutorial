@@ -1,5 +1,6 @@
 <h1>{{ question.question_text }}</h1>
 <ul>
+<!--    Q. choice_set.all()이 무엇? (어디에 내장된 함수?)-->
     {% for choice in question.choice_set.all %}
         <li>{{ choice.choice_text }}</li>
     {% endfor %}
